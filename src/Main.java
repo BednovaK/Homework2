@@ -2,12 +2,10 @@ public class Main {
     public static void main(String[] args) {
 
         int startBalanse = 100;
-        int increaseSumm = 200;
+        int increaseSumm = 1100;
 
-        int bonusRub = increaseSumm / 100;
-        if (increaseSumm < 1000) {
-            bonusRub = 0;
-        }
+        int bonusRub = increaseSumm > 1000 ? increaseSumm / 100 : 0;
+
         int finalSumm = startBalanse + increaseSumm + bonusRub;
 
         System.out.println("Сумма бонусных рублей");
